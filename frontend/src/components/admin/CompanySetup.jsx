@@ -7,10 +7,10 @@ import { Input } from '../ui/input'
 import { useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'sonner'
 import { useSelector } from 'react-redux'
-import useGetCompanyById from '@/hooks/useGetCompanyById'
 import axios from 'axios'
 import { Button } from '../ui/button'
 import { COMPANY_API_ENDPOINT } from '@/utils/constant'
+import useGetCompanyById from '@/hooks/UseGetCompanyById'   
 
 const CompanySetup = () => {
     const params = useParams();
