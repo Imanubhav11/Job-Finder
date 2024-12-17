@@ -1,9 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
-// Import plugins using ES module syntax
-import tailwindcssAnimate from "tailwindcss-animate";
-
-export default {
+module.exports = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{js,jsx}',
@@ -56,9 +52,6 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
-      fontFamily: {
-        serif: ['Times New Roman', 'serif'],
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -80,6 +73,5 @@ export default {
       },
     },
   },
-  // Use imported plugin
-  plugins: [tailwindcssAnimate],
-};
+  plugins: [require("tailwindcss-animate")],
+}
