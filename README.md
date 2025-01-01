@@ -1,41 +1,55 @@
-# Job Portal Application
+# JobFinder Portal
 
-A responsive and feature-rich job portal application that connects job seekers with recruiters, providing seamless job search and recruitment experiences.
+The **JobFinder Portal** is a comprehensive platform that connects job seekers with recruiters, providing an easy and effective way to find and post job opportunities. This application is built with modern web technologies and offers a seamless user experience for both job seekers and recruiters.
+
+## Usage
+
+### Job Seeker Login
+- **Email:** rohankumar65@gmail.com
+- **Password:** Hirohan12
+
+### Recruiter Login
+- **Email:** robin12@gmail.com
+- **Password:** robin12
+
+Once logged in, you can explore the features available for your role.
 
 ## Features
 
-### General Features
-- Dynamic display of the latest and top job openings.
-- User-friendly interface with responsive design for both mobile and desktop devices.
+### For Job Seekers:
+- Browse the latest and top job openings.
+- Search and filter job listings based on preferences.
+- Apply for jobs directly from the portal.
 
-### Job Listings
-- Grid layout for job cards with modern styling.
-- Displays job details fetched from the backend.
-- Dynamically updates job listings with real-time data.
+### For Recruiters:
+- Post job openings with detailed descriptions.
+- Manage job postings.
+- Review applications from job seekers.
 
-### State Management
-- Redux-based state management for efficient handling of global state.
-- Ensures smooth and fast updates to the UI.
+## Technologies Used
+- **Frontend:** React.js, Redux, TailwindCSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JSON Web Tokens (JWT), Cookies
+- **UI Components:** shadcn/UI
+- **Icons:** Lucide React
 
-### Mobile Optimization
-- Added custom padding and responsive grid structures for better usability on small devices.
+## Prerequisites
 
-## Tech Stack
-- **Frontend:** ReactJS, Redux, Tailwind CSS
-- **Backend API:** Axios for API calls
-- **Styling:** Tailwind CSS for modern and responsive design
-- **State Management:** Redux
+Before you begin, ensure you have met the following requirements:
+- Node.js and npm installed on your local machine.
+- MongoDB instance running locally or on a cloud provider.
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/job-portal-application.git
+   git clone https://github.com/yourusername/jobfinder-portal.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd job-portal-application
+   cd jobfinder-portal
    ```
 
 3. Install dependencies:
@@ -43,56 +57,37 @@ A responsive and feature-rich job portal application that connects job seekers w
    npm install
    ```
 
-4. Start the development server:
-   ```bash
-   npm start
+4. Set up environment variables:
+   Create a `.env` file in the root directory and add the following:
+   ```env
+   PORT=5000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   CLIENT_URL=http://localhost:3000
    ```
 
-The application will be available at `http://localhost:3000`.
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Usage
-- Open the application in your browser.
-- View the latest job listings dynamically displayed.
-- Navigate through the responsive grid layout, optimized for mobile and desktop views.
+## Scripts
 
-## Folder Structure
-```
-job-portal-application/
-├── src/
-│   ├── components/
-│   │   ├── LatestJobs.jsx
-│   │   ├── LatestJobCards.jsx
-│   ├── redux/
-│   │   ├── jobSlice.js
-│   ├── utils/
-│   │   ├── constant.js
-│   ├── App.js
-│   ├── index.js
-├── public/
-├── package.json
-├── README.md
-```
+- `npm run dev` - Start the development server.
+- `npm run build` - Build the project for production.
+- `npm start` - Start the production server.
 
 ## Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-1. Fork the repository.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m 'Add some feature'
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Create a pull request.
+Contributions are always welcome! If you'd like to contribute, please fork the repository and create a pull request with your changes.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-Special thanks to all contributors and open-source libraries used in this project.
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgements
+
+- [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [MongoDB](https://www.mongodb.com/)
